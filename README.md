@@ -4,7 +4,9 @@ A Clojure library for translating US ZIP codes to city, state, and timezone
 
 ## Usage
 
-Add `[democracyworks/phantom-zone "0.1.0"]` to your project dependencies.
+Add this to your project dependencies:
+
+![](https://clojars.org/democracyworks/phantom-zone/latest-version.svg)
 
 ```clojure
 (ns my.proj
