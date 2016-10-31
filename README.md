@@ -17,6 +17,19 @@ Add this to your project dependencies:
            (zipcode->city-state-timezone zip)))
 ```
 
+## Data source
+
+The data in `/resources/zip-city-state-timezone.edn` comes from the US Postal
+Service. It can be downloaded in CSV format from 
+http://www.usps.com/mailtracking/_csv/NonAutomated5Digit.csv.
+
+We have modified the original file as follows:
+
+- Convert integer ZIP codes to strings (sometimes they start with 0's).
+- Convert to an EDN map (for easier ingestion in Clojure).
+- Only keep the first instance of a given ZIP code.
+    - The original file sometimes repeats ZIP codes, but since they become map
+      keys they must be unique. So we just throw away all but the first.
 
 ## License
 
