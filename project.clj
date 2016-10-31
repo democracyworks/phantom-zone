@@ -1,4 +1,4 @@
-(defproject democracyworks/phantom-zone "0.1.1"
+(defproject democracyworks/phantom-zone "0.1.2-SNAPSHOT"
   :description "Translates US ZIP codes into city, state, and timezone"
   :url "https://github.com/democracyworks/phantom-zone"
   :license {:name "Eclipse Public License"
